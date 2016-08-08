@@ -1,0 +1,8 @@
+# genetic code ... a sequence of nitrogenous base pairs, A, U, G, C, T
+# initialize a hash of base pairs
+# define the genetic code
+# define rule of replication, as well as complementary base pairing
+# randomize hash of base pairs x times and initialize x new arrays
+# print/synthesize complementary pairs of hash and store in an array
+# sequence through each array and find matching product
+# chain product to get protein
