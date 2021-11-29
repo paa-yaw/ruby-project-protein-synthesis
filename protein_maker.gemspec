@@ -6,5 +6,6 @@ Gem::Specification.new do |s|
     s.authors = ['Paa-Yaw']
     s.email = 'deepsky_5@live.com'
     s.files = Dir.glob("{lib}/**/*")
+    s.homepage = 'https://github.com/paa-yaw/ruby-project-protein-synthesis'
     s.license = 'MIT'
   end
