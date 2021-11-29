@@ -11,11 +11,12 @@ module DnaWorker
 
     
     def self.initiate_translation(codon_collection)
+      
       puts "intiating translation of mRNA sequence"
       puts ""
       puts "resulting amino acid sequence..."
       puts ""
-  
+      
       codon_collection.each do |codon|
         if GeneticConstants.genetic_code[codon.join("")].nil?
           next

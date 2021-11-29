@@ -9,8 +9,10 @@ require 'dna_worker'
     attr_accessor :input_sequence
     attr_reader :purified_array_sequence, :complementary_mRNA_sequence, :codon_collection, :amino_acid_strand
 
-    def initialize(input_sequence="aATATGGGAAACCATTTGTCCACAAuafccgccggATTTTATATATATATATATATAA")
-      @input_sequence ||= input_sequence
+    def initialize(input_sequence=nil)
+      raise 'No Input Sequence' if input_sequence.nil?
+      
+      @input_sequence = input_sequence
       @codon_collection = []
     end
     
