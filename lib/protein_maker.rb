@@ -10,7 +10,7 @@ require 'dna_worker'
     attr_reader :purified_array_sequence, :complementary_mRNA_sequence, :codon_collection, :amino_acid_strand
 
     def initialize(input_sequence="aATATGGGAAACCATTTGTCCACAAuafccgccggATTTTATATATATATATATATAA")
-      @input_sequence = input_sequence
+      @input_sequence ||= input_sequence
       @codon_collection = []
     end
     
